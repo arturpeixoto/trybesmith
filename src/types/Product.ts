@@ -4,3 +4,9 @@ export type Product = {
   price: string;
   orderId: number;
 };
+
+export type ProductCreated = {
+  id: number,
+  name: string,
+  price: string,
+};

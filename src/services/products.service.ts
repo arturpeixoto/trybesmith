@@ -1,12 +1,7 @@
 import ProductModel, { ProductInputtableTypes, 
   ProductSequelizeModel } from '../database/models/product.model';
+import { ProductCreated } from '../types/Product';
 import { ServiceResponse } from '../types/ServiceResponse';
-
-type ProductCreated = {
-  id: number,
-  name: string,
-  price: string,
-};
 
 async function create(product: ProductInputtableTypes): Promise<ServiceResponse<ProductCreated>> {
   const createdProduct = await ProductModel.create(product);
