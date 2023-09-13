@@ -1,5 +1,8 @@
 // Tirado do conteúdo da Trybe
-export type ServiceResponseErrorStatus = 'UNAUTHORIZED' | 'NOT_FOUND';
+export type ServiceResponseErrorStatus = 'UNAUTHORIZED' | 
+'NOT_FOUND' | 
+'UNPROCESSABLE_ENTITY' | 
+'INVALID_DATA';
 
 export type ServiceResponseError = {
   status: ServiceResponseErrorStatus,
