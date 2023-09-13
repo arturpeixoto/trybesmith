@@ -6,7 +6,8 @@ const productsRouter = Router();
 
 productsRouter.post(
   '/products', 
-  checkProductsFieldsMiddleware.checkPost,
+  checkProductsFieldsMiddleware.checkPostFields,
+  checkProductsFieldsMiddleware.checkInputtableFields,
   productsController.create,
 );
 
