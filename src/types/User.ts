@@ -1,3 +1,5 @@
+import { ServiceResponse } from './ServiceResponse';
+
 export type User = {
   id: number;
   username: string;
@@ -5,3 +7,5 @@ export type User = {
   level: number;
   password: string;
 };
+
+export type LoginResponse = ServiceResponse<{ token: string }>;
